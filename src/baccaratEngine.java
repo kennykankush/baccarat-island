@@ -226,6 +226,11 @@ public class baccaratEngine{
                     setEndGame(true); 
                     System.out.println("Player drew " + playerThirdCard + " and I will stand because i have a " + getSumDealer());
                 }
+            } else if (getSumDealer() >= 0 && getSumDealer() <= 2){
+                setDealerState("Draw");
+                setEndGame(true);
+                System.out.println("Player drew " + playerThirdCard + " and I will draw because i have a " + getSumDealer());
+
             } else {
                 setDealerState("Stand");
                 setEndGame(true); 
